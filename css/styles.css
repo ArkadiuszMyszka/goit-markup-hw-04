@@ -2,6 +2,7 @@
     --brand-color-background-overall: #FFFFFF;
     --brand-color-font-overall: #212121;
     --brand-color-hover: #2196F3;
+    --brand-color-hover-filter: invert(43%) sepia(53%) saturate(1652%) hue-rotate(184deg) brightness(101%) contrast(91%);
     --brand-color-background: #FFFFFF;
     --brand-color-titleleft: #2196F3;
     --brand-color-titleright: #000;
@@ -79,6 +80,8 @@ h1, h2, h3, p {
 }
 .header-link-contact {
     margin-left:50px;
+    display: flex;
+    align-items: center;
 }
 .title-side-left {
     font-family: 'Raleway', sans-serif;
@@ -115,6 +118,25 @@ h1, h2, h3, p {
     list-style: none;
     
 }
+.icons-svg-header-mail {
+    width:16px;
+    height:12px;
+    margin-right: 10px;
+}
+.icons-svg-header-phone {
+    width:10px;
+    height:16px;
+    margin-right: 10px;
+    
+}
+.header-link-contact:hover, .header-link-contact:focus {
+    filter: var(--brand-color-hover-filter);
+        
+}
+/*.icons-svg-header-mail:hover, .icons-svg-header-phone:hover, .icons-svg-header-mail:focus, .icons-svg-header-phone:focus{
+filter: var(--brand-color-hover-filter);
+}
+*/
 .mail-header {
     text-decoration: none;
     font-weight: 500;
@@ -132,9 +154,10 @@ h1, h2, h3, p {
         color: var(--brand-color-contact-header);
 }
 
-.link-active-color:hover, .link-active-color:focus {
+/*.link-active-color:hover, .link-active-color:focus {
     color: var(--brand-color-hover);
-}
+}*/
+
 .active-page-color-highlighting {
     color: var(--brand-color-hover);
 }
