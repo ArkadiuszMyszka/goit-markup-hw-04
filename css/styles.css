@@ -133,7 +133,7 @@ h1, h2, h3, p {
     margin-right: 10px;
     
 }
-.header-link-contact:hover, .header-link-contact:focus {
+.header-link-contact:hover, .header-link-contact:focus-within {
     --color4: var(--brand-color-hover);
     
    
