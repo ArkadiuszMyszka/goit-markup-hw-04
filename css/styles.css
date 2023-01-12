@@ -213,8 +213,12 @@ filter: var(--brand-color-hover-filter);
 }
 
 .main-top-background {
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%);
-    background-image:url("../images/peopleonmeeting.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+        ),
+        url("../images/peopleonmeeting.jpg");
         background-size: cover;
         max-width: 1600px;
         background-position: center;
