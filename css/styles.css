@@ -344,7 +344,10 @@ font-weight: 700;
     background-color: var(--brand-color-main-bottom-background);
 }
 .main-bottom {   
+    display: flex;
+    flex-direction: column;
         background-color: var(--brand-color-main-bottom-background);
+        align-items: center;
 }
 .main-bottom-box {
     display: flex;
@@ -352,6 +355,7 @@ font-weight: 700;
     justify-content: center;
     margin-top: 50px;
     gap: 30px;
+    padding: 0px;
     
 }
 .main-bottom-figure {
@@ -410,8 +414,43 @@ letter-spacing: 0.03em;
     
 }
 .main-bottom-figure-icons:hover, .main-bottom-figure-icons:focus {
---color3: blue;
+--color3: var(--brand-color-background-overall);
+--color5: var(--brand-color-hover);
 
+}
+.main-bottom-team {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    }
+.main-bottom-team h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+.main-bottom-team-box{
+    display: flex;
+    gap: 30px;
+    
+
+}
+.main-bottom-team-list {
+    display: flex;
+    width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+            border-radius: 4px;
+
+}
+.main-bottom-team-list:hover, .main-bottom-team-list:focus{
+    border: 1px solid var(--brand-color-hover);
+}
+.main-bottom-team-list-icons{
+padding-left: 32px;
+padding-right: 32px;
+object-fit: contain;
+}
+.main-bottom-team-list-icons:hover, .main-bottom-team-list-icons:focus{
+    --color3: var(--brand-color-hover);
 }
 /*.main-bottom li {
     background-color: var(--brand-color-background);
