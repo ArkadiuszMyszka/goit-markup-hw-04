@@ -213,8 +213,8 @@ filter: var(--brand-color-hover-filter);
 }
 
 .main-top-background {
-    background-image:  url("../images/peopleonmeeting.jpg");
-    
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%);
+    background-image:url("../images/peopleonmeeting.jpg");
         background-size: cover;
         max-width: 1600px;
         background-position: center;
@@ -227,6 +227,7 @@ filter: var(--brand-color-hover-filter);
 
         
 }
+
 .text-mainpage-box {
     display: flex;
     padding-top: 200px;
@@ -360,7 +361,7 @@ font-weight: 700;
 }
 .main-bottom-list-figcaption{
     margin-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .main-bottom h2 {
@@ -387,7 +388,24 @@ letter-spacing: 0.03em;
         letter-spacing: 0.03em;
             color: var(--brand-color-article-p);
 }
+.main-bottom-figure-icons-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+.main-bottom-figure-icons{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%
+    
+}
+.main-bottom-figure-icons:hover, .main-bottom-figure-icons:focus {
+filter: var(--brand-color-hover-filter);
+fill: #EEEEEE;
 
+}
 /*.main-bottom li {
     background-color: var(--brand-color-background);
 }*/
