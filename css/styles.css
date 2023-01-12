@@ -24,6 +24,7 @@
     --brand-color-port-central-border:#EEEEEE;
     --brand-color-header-border:#ECECEC;
     --brand-color-main-article-box-background: #F5F4FA;
+    --brand-color-footer-icons-background:rgba(255, 255, 255, 0.1);
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -178,13 +179,17 @@ filter: var(--brand-color-hover-filter);
         color: var(--brand-color-address-footer);
 }
 .footer-main {
+    display: flex;
         background-color: var(--brand-color-background-footer);
 }
 .footer-list {
     list-style: none;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 70px;
+    
 }
 .footer-link-name {
     margin-bottom: 20px;
@@ -207,12 +212,27 @@ filter: var(--brand-color-hover-filter);
         letter-spacing: 0.03em;
         color: var(--brand-color-contact-footer);
 }
-
+.footer-icon-box{
+    padding-top: 72px;
+    
+}
+.footer-icon-box h3 {
+    size: 14px;
+    color:var(--brand-color-background-overall);
+    margin-bottom: 20px;
+}
+.footer-icon-box-list{
+    display: flex;
+    gap: 10px;
+}
 .main-top-box {
     display: block;
         background-color: var(--brand-color-background-main-top);
 }
-
+.footer-icons-color {
+--color5: var(--brand-color-footer-icons-background);
+--color3: var(--brand-color-background-overall);
+}
 .main-top-background {
     background-image: linear-gradient(
         0deg,
@@ -430,7 +450,7 @@ letter-spacing: 0.03em;
 .main-bottom-team-box{
     display: flex;
     gap: 30px;
-    
+    padding: 0px;
 
 }
 .main-bottom-team-list {
@@ -502,6 +522,9 @@ object-fit: contain;
 .portfolio-central-images-list{
 flex-basis: calc((100% - 2 * 30px) / 3);
 max-width: 370px;
+}
+.portfolio-central-images-list:hover, .portfolio-central-images-list:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-central figure {
     display: flex;
