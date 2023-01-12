@@ -68,6 +68,7 @@ h1, h2, h3, p {
     display: flex;
     list-style: none;
     align-items: center;
+    padding: 0px;
     
 }
 .title-name-header {
