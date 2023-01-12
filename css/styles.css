@@ -22,7 +22,8 @@
     --brand-color-port-button-hover-boxshadow2: rgba(0, 0, 0, 0.08);
     --brand-color-port-button-hover-boxshadow3: rgba(0, 0, 0, 0.12);
     --brand-color-port-central-border:#EEEEEE;
-    --brand-color-header-border:#ECECEC
+    --brand-color-header-border:#ECECEC;
+    --brand-color-main-article-box-background: #F5F4FA;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -43,6 +44,7 @@ h1, h2, h3, p {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
 .header-box{
     display: block;
@@ -131,7 +133,7 @@ h1, h2, h3, p {
 }
 .header-link-contact:hover, .header-link-contact:focus {
     filter: var(--brand-color-hover-filter);
-        
+   
 }
 /*.icons-svg-header-mail:hover, .icons-svg-header-phone:hover, .icons-svg-header-mail:focus, .icons-svg-header-phone:focus{
 filter: var(--brand-color-hover-filter);
@@ -207,15 +209,22 @@ filter: var(--brand-color-hover-filter);
 
 .main-top-box {
     display: block;
-    background-color: var(--brand-color-background-main-top);
+        background-color: var(--brand-color-background-main-top);
 }
 
 .main-top-background {
-        background-color: var(--brand-color-background-main-top);
+    background-image:  url("../images/peopleonmeeting.jpg");
+    
+        background-size: cover;
+        max-width: 1600px;
+        background-position: center;
+        background-repeat: no-repeat;
+    background-color: var(--brand-color-background-main-top);
         height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         
 }
 .text-mainpage-box {
@@ -272,7 +281,21 @@ margin-bottom: 94px;
     gap: 30px;
 
 }
-
+.article-mainpage-list-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--brand-color-main-article-box-background) ;
+    margin-bottom: 30px;
+  
+}
+.article-mainpage-list-box-images{
+    width: 70px;
+    height: 70px;
+    
+}
 .article-mainpage h3 {
 font-weight: 700;
     font-size: 14px;
