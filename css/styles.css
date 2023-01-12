@@ -132,7 +132,8 @@ h1, h2, h3, p {
     
 }
 .header-link-contact:hover, .header-link-contact:focus {
-    filter: var(--brand-color-hover-filter);
+    --color4: var(--brand-color-hover);
+    
    
 }
 /*.icons-svg-header-mail:hover, .icons-svg-header-phone:hover, .icons-svg-header-mail:focus, .icons-svg-header-phone:focus{
@@ -156,9 +157,9 @@ filter: var(--brand-color-hover-filter);
         color: var(--brand-color-contact-header);
 }
 
-/*.link-active-color:hover, .link-active-color:focus {
+.link-active-color:hover, .link-active-color:focus {
     color: var(--brand-color-hover);
-}*/
+}
 
 .active-page-color-highlighting {
     color: var(--brand-color-hover);
@@ -409,8 +410,7 @@ letter-spacing: 0.03em;
     
 }
 .main-bottom-figure-icons:hover, .main-bottom-figure-icons:focus {
-filter: var(--brand-color-hover-filter);
-fill: #EEEEEE;
+--color3: blue;
 
 }
 /*.main-bottom li {
