@@ -135,7 +135,9 @@ h1, h2, h3, p {
 }
 .header-link-contact:hover, .header-link-contact:focus-within {
     --color4: var(--brand-color-hover);
-    
+}
+ .header-link-contact:hover a, .header-link-contact:focus-within a {
+     color: var(--brand-color-hover);
    
 }
 /*.icons-svg-header-mail:hover, .icons-svg-header-phone:hover, .icons-svg-header-mail:focus, .icons-svg-header-phone:focus{
