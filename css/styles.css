@@ -456,6 +456,7 @@ letter-spacing: 0.03em;
     padding: 0px;
 
 }
+/*
 .main-bottom-team-list {
     display: flex;
     width: 170px;
@@ -557,3 +558,32 @@ max-width: 370px;
     color: var(--brand-color-article-p);
     
 }
+
+.main-bottom-team-list{
+    display: flex;
+        width: 170px;
+            height: 92px;
+        border: 1px solid #AFB1B8;
+            border-radius: 4px;
+}
+.main-bottom-team-link{
+    display:flex;
+    
+    
+}
+.main-bottom-team-icon{
+padding-left: 32px;
+    padding-right: 32px;
+    object-fit: contain;
+    max-width: 170px;
+        max-height: 92px;
+        
+}
+
+.main-bottom-team-list:hover, .main-bottom-team-list:focus-within{
+    border: 1px solid var(--brand-color-hover);
+    border-radius: 4px;
+    --color3: var(--brand-color-hover);
+   
+}
+
